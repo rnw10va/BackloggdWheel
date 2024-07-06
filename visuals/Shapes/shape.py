@@ -47,7 +47,7 @@ class Shape():
    def math(self,wheelCountValue):
       """Does the math needed to know where every shape should be in the circle."""
       self.t=self.degreesPerValue*wheelCountValue # Finds the degrees needed for the x and y axis values of the first of the two non-middle triangle points.
-      self.t2=self.degreesPerValue*((wheelCountValue+1)%self.wheelValuesCount) # Finds the degrees needed for the x and y axis values of the first of the two non-middle triangle points.
+      self.t2=self.degreesPerValue*(wheelCountValue+1) # Finds the degrees needed for the x and y axis values of the first of the two non-middle triangle points.
       self.x=self.halfOfSize*math.cos(math.radians(self.t)) # x-axis of the first of the two non-middle triangle points.
       self.y=self.halfOfSize*math.sin(math.radians(self.t)) # y-axis of the first of the two non-middle triangle points.
       self.x2=self.halfOfSize*math.cos(math.radians(self.t2)) # x-axis of the second of the two non-middle triangle points.

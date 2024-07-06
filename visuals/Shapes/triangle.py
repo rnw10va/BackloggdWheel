@@ -1,6 +1,7 @@
 import math
 from .shape import Shape
 from PyQt6 import QtGui,QtCore
+from PyQt6.QtGui import QColor
 class Triangle(Shape):
    """
    Class for a Triangle object. Inherits from the Shape object to get the values the Triangle needs.

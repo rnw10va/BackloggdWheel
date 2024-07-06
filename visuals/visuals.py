@@ -2,6 +2,7 @@ import sys
 from .mainWindow import MainWindow
 from .ShapeGroups.triangles import Triangles
 from .ShapeGroups.ellipses import Ellipses
+from .ShapeGroups.texts import Texts
 from PyQt6.QtWidgets import QApplication
 
 class Visuals:
@@ -16,6 +17,7 @@ class Visuals:
       window=MainWindow(size) # Creates the Main Window
       window.shapeGroups.append(Triangles(size,wheelValuesCount)) # Creates the group of Triangles that will be needed needed to create the jagged wheel.
       window.shapeGroups.append(Ellipses(size,wheelValuesCount)) # Creates the group of Ellipses that will be needed to round the wheel's edges.
+      window.shapeGroups.append(Texts(size,wheelValuesCount))
       for shapeGroup in window.shapeGroups: # Loops through the groups to actually create each individual tringle and ellipse's object.
          shapeGroup.createShapesForGroup()
       window.show()
