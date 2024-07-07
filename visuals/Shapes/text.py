@@ -6,6 +6,9 @@ class Text(Shape):
     """
     Class for a Triangle object. Inherits from the Shape object to get the values the Triangle needs.
     """
+    def setLinkData(self,linkData):
+        self.linkData=linkData
+
     def paint(self,painter,rotate):
         if not painter.isActive():
             return
@@ -18,5 +21,5 @@ class Text(Shape):
         # ADD FONT ADJUSTMENT HERE
         painter.rotate(math.floor((self.t2+self.t)/2))
         #painter.translate((self.halfOfSize+self.x2-self.halfOfSize+self.x)//2,(self.halfOfSize+self.y2-self.halfOfSize+self.y)//2)
-        painter.drawText(0,math.ceil(-72/self.wheelValuesCount),"textTEXTtext")
+        painter.drawText(0,math.ceil(-72/self.wheelValuesCount),self.linkData[self.wheelCountValue])
         painter.restore()

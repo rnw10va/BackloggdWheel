@@ -6,6 +6,7 @@ class Shape():
    """
    def __init__(self,wheelCountValue,halfOfSize,degreesPerValue,wheelValuesCount,parent=None):
       """Constructor for the parent class of shapes."""
+      self.wheelCountValue=wheelCountValue
       self.halfOfSize=halfOfSize
       self.wheelValuesCount=wheelValuesCount
       self.degreesPerValue=degreesPerValue
