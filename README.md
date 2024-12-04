@@ -1,4 +1,4 @@
-# Media Selection Wheel
+# Media Selection Wheel (Succeeded by my new Firefox extension https://github.com/rnw10va/Unofficial-Backloggd-Extension)
 
 ## Progress on hold temporarily due to life obligations and determining if I should make changes to how I created the GUI.
 
